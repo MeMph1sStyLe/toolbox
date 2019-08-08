@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Whois Query
+
+# whois www.google.com > whoisresults 
+
+for i in `cat whoissource`
+do
+whois $i >> whoisresults
+done
+

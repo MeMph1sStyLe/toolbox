@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Simple Task Counter
+
+task=$(<taskcounter2)
+
+(( task ++ ))
+
+echo $task > taskcounter2
