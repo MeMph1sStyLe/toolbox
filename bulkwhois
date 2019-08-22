@@ -1,0 +1,7 @@
+#/bin/sh
+
+# Bulk whois Script
+
+for domain in $(cat domains.txt);do
+	curl -u $USERNAME:$KEY 'https://api.passivetotal.org/v2/whois?query=$domain' >> bulk_whois_results.txt
+done
